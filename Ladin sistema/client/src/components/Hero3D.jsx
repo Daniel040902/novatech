@@ -205,7 +205,7 @@ function Globe({ isMobile }) {
   // Cargamos la textura de la Tierra con useEffect (evita Suspense)
   useEffect(() => {
     const loader = new THREE.TextureLoader()
-    loader.load('/textures/earth-day.jpg', (texture) => {
+    loader.load(`${import.meta.env.BASE_URL}textures/earth-day.jpg`, (texture) => {
       // Configuramos espacio de color sRGB para textura realista
       texture.colorSpace = THREE.SRGBColorSpace
       setEarthMap(texture)

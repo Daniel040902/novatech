@@ -58,7 +58,7 @@ export default function Footer() {
             {/*
               Logo de Novatech (SVG)
             */}
-            <img src="/novatech_logo.svg" alt="Novatech" className="h-8 w-auto" />
+            <img src={`${import.meta.env.BASE_URL}novatech_logo.svg`} alt="Novatech" className="h-8 w-auto" />
 
             {/*
               Descripcion de la empresa

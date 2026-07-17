@@ -17,7 +17,7 @@ const SERVICES = [
   {
     title: 'Desarrollo Web',
     // encodeURI se usa al renderizar para manejar espacios en el filename
-    image: '/pawuina web.png',
+    image: `${import.meta.env.BASE_URL}pawuina web.png`,
     description: 'Creamos paginas web corporativas, landing pages y sistemas web modernos que ayudan a tu negocio a vender mas y destacar en internet.',
     gradient: 'from-blue-500 to-cyan-500',
     icon: (
@@ -29,7 +29,7 @@ const SERVICES = [
   },
   {
     title: 'Sistemas Empresariales',
-    image: '/Sistemas Empresariales.png',
+    image: `${import.meta.env.BASE_URL}Sistemas Empresariales.png`,
     description: 'Desarrollamos sistemas personalizados para gestionar inventarios, ventas, clientes, reservas y procesos internos de forma eficiente.',
     gradient: 'from-purple-500 to-pink-500',
     icon: (
@@ -41,7 +41,7 @@ const SERVICES = [
   },
   {
     title: 'Aplicaciones Moviles',
-    image: '/Aplicacione moviles.png',
+    image: `${import.meta.env.BASE_URL}Aplicacione moviles.png`,
     description: 'Creamos aplicaciones moviles rapidas e intuitivas para Android e iOS adaptadas a las necesidades de tu empresa.',
     gradient: 'from-emerald-500 to-teal-500',
     icon: (
@@ -53,7 +53,7 @@ const SERVICES = [
   },
   {
     title: 'SEO y Posicionamiento Web',
-    image: '/SEO y Posicionamiento Web.png',
+    image: `${import.meta.env.BASE_URL}SEO y Posicionamiento Web.png`,
     description: 'Optimizamos tu sitio web para mejorar su visibilidad en Google y atraer mas clientes potenciales de forma organica.',
     gradient: 'from-amber-500 to-orange-500',
     icon: (
@@ -66,7 +66,7 @@ const SERVICES = [
 
   {
     title: 'Hosting y Seguridad Web',
-    image: '/hosting.png',
+    image: `${import.meta.env.BASE_URL}hosting.png`,
     description: 'Configuramos dominios, hosting, certificados SSL y proteccion para garantizar el rendimiento y seguridad de tu sitio web.',
     gradient: 'from-rose-500 to-red-500',
     icon: (

@@ -91,7 +91,7 @@ export default function Navbar() {
               className="flex items-center"
               whileHover={{ scale: 1.05 }}
             >
-              <img src="/novatech_logo.svg" alt="Novatech" className="h-8 w-auto" />
+              <img src={`${import.meta.env.BASE_URL}novatech_logo.svg`} alt="Novatech" className="h-8 w-auto" />
             </motion.a>
 
             {/*
@@ -208,7 +208,7 @@ export default function Navbar() {
             Header del panel: logo + boton cerrar
           */}
           <div className="flex items-center justify-between p-5 border-b border-white/5">
-            <img src="/novatech_logo.svg" alt="Novatech" className="h-6 w-auto" />
+            <img src={`${import.meta.env.BASE_URL}novatech_logo.svg`} alt="Novatech" className="h-6 w-auto" />
             <button onClick={() => setMenuOpen(false)} className="text-slate-400 hover:text-white">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
