@@ -1,0 +1,37 @@
+# === .NET ===
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.vs/
+.vs/
+
+# === Node / Frontend ===
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# === Environment / Secrets ===
+.env
+.env.*
+*.env
+appsettings.*.json
+!appsettings.json
+
+# === Logs ===
+logs/
+*.log
+
+# === IDE ===
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# === Misc ===
+nul
+*.sw?
+*.swp
+Thumbs.db

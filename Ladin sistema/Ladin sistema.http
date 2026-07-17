@@ -1,0 +1,6 @@
+@Ladin_sistema_HostAddress = http://localhost:5050
+
+GET {{Ladin_sistema_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
