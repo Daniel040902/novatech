@@ -1,0 +1,51 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#101a3f"/>
+      <stop offset="55%" stop-color="#060b1d"/>
+      <stop offset="100%" stop-color="#02040d"/>
+    </radialGradient>
+    <linearGradient id="neon" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b000ff"/>
+      <stop offset="45%" stop-color="#2457ff"/>
+      <stop offset="100%" stop-color="#20e7ff"/>
+    </linearGradient>
+    <linearGradient id="textBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="52%" stop-color="#ffffff"/>
+      <stop offset="53%" stop-color="#07b9ff"/>
+      <stop offset="100%" stop-color="#1f6fff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#bg)"/>
+
+  <!-- aro luminoso -->
+  <circle cx="600" cy="535" r="420" fill="none" stroke="url(#neon)" stroke-width="7" opacity=".95" filter="url(#glow)"/>
+  <circle cx="600" cy="535" r="390" fill="none" stroke="#236bff" stroke-width="2" opacity=".7"/>
+  <circle cx="600" cy="535" r="360" fill="none" stroke="#7c3aed" stroke-width="2" opacity=".45"/>
+  <circle cx="600" cy="535" r="330" fill="none" stroke="#00d4ff" stroke-width="1.5" opacity=".35"/>
+
+  <!-- brillos -->
+  <g fill="#fff" filter="url(#glow)">
+    <circle cx="600" cy="115" r="6"/><circle cx="180" cy="535" r="6"/><circle cx="1020" cy="535" r="6"/><circle cx="600" cy="955" r="6"/>
+    <circle cx="285" cy="255" r="3"/><circle cx="935" cy="292" r="3"/><circle cx="858" cy="835" r="3"/><circle cx="330" cy="820" r="3"/>
+  </g>
+
+  <!-- hexagono -->
+  <polygon points="600,240 855,390 855,680 600,830 345,680 345,390" fill="none" stroke="url(#neon)" stroke-width="46" stroke-linejoin="round" filter="url(#glow)"/>
+  <polygon points="600,240 855,390 855,680 600,830 345,680 345,390" fill="none" stroke="#dffbff" stroke-width="4" opacity=".8"/>
+
+  <!-- N estilizada -->
+  <path d="M430 685 L430 405 L510 405 L690 590 L690 405 L770 405 L770 685 L690 685 L510 500 L510 685 Z" fill="url(#neon)" filter="url(#glow)"/>
+  <path d="M430 685 L430 405 L510 405 L690 590 L690 405 L770 405 L770 685 L690 685 L510 500 L510 685 Z" fill="none" stroke="#dffbff" stroke-width="3" opacity=".8"/>
+
+  <!-- texto -->
+  <text x="600" y="940" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="800" fill="url(#textBlue)" letter-spacing="-3">NovaTech</text>
+  <text x="600" y="1025" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="500" fill="#ffffff" letter-spacing="34">SOLUTIONS</text>
+  <text x="600" y="1095" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600" fill="url(#neon)" letter-spacing="9">TECNOLOGÍA QUE IMPULSA TU NEGOCIO</text>
+</svg>
