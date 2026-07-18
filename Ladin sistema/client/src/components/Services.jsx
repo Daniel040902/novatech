@@ -16,6 +16,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 const SERVICES = [
   {
     title: 'Desarrollo Web',
+    price: '$60',
     // encodeURI se usa al renderizar para manejar espacios en el filename
     image: `${import.meta.env.BASE_URL}pawuina web.png`,
     description: 'Creamos paginas web corporativas, landing pages y sistemas web modernos que ayudan a tu negocio a vender mas y destacar en internet.',
@@ -199,6 +200,11 @@ function ServiceCard({ service, index }) {
         Contenido de la tarjeta: titulo, descripcion, tech tags
       */}
       <div className="p-6 relative">
+        {service.price && (
+          <div className="mb-2 inline-block px-3 py-1 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 text-green-400 text-sm font-bold">
+            Desde {service.price}
+          </div>
+        )}
         <h3 className="text-xl font-semibold text-white mb-3">{service.title}</h3>
         <p className="text-slate-400 leading-relaxed text-sm mb-4">{service.description}</p>
         {/*
