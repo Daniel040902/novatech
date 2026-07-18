@@ -260,7 +260,7 @@ export default function Hero() {
         Texto, descripcion, CTAs y estadisticas
       */}
       <div className="relative w-full">
-        <div className="px-6 sm:px-12 lg:px-16 py-32">
+        <div className="px-6 sm:px-12 lg:px-16 py-16">
           {/*
             Contenedor animado con stagger children
           */}
@@ -273,7 +273,7 @@ export default function Hero() {
             {/*
               Badge de marca: "Novatech" + "Soluciones Digitales"
             */}
-            <motion.div className="flex items-center gap-2 mb-6">
+            <motion.div className="flex items-center gap-2 mb-4">
               <span
                 className="text-2xl md:text-3xl font-bold text-white/90 tracking-tight"
                 style={{ fontFamily: "'Space Grotesk', sans-serif" }}
@@ -289,7 +289,7 @@ export default function Hero() {
               Titulo principal con gradiente animado
             */}
             <motion.h1
-              className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.05] tracking-[-0.03em]"
+              className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-[1.1] tracking-[-0.03em]"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
               Llevamos tu negocio
@@ -300,7 +300,7 @@ export default function Hero() {
               <br />
               <span className="text-green-400">Desde $60</span>
               <br />
-              <span className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-400/80">
+              <span className="text-lg md:text-2xl lg:text-3xl font-medium text-slate-400/80">
                 Tambien puedes obtener el control de tu negocio desde tu casa.
               </span>
             </motion.h1>
@@ -309,7 +309,7 @@ export default function Hero() {
               Descripcion del servicio
             */}
             <motion.p
-              className="text-base md:text-lg text-slate-400/80 mb-12 leading-relaxed font-light tracking-wide max-w-xl"
+              className="text-sm md:text-base text-slate-400/80 mb-6 leading-relaxed font-light tracking-wide max-w-xl"
             >
               Desarrollamos landing pages, sistemas web y aplicaciones moviles a medida,
               creando soluciones tecnologicas modernas para impulsar tu negocio.
@@ -374,14 +374,14 @@ export default function Hero() {
             {/*
               Estadisticas: proyectos, clientes, años
             */}
-            <motion.div variants={ITEM_VARIANTS} className="flex items-center gap-8 mt-16">
+            <motion.div variants={ITEM_VARIANTS} className="flex items-center gap-6 mt-8">
               {[
                 { number: '50+', label: 'Proyectos' },
                 { number: '30+', label: 'Clientes' },
                 { number: '5+', label: 'Años' },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-white">{stat.number}</div>
+                  <div className="text-xl md:text-2xl font-bold text-white">{stat.number}</div>
                   <div className="text-xs text-slate-500 font-medium tracking-wide uppercase mt-1">{stat.label}</div>
                 </div>
               ))}
