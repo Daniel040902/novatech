@@ -289,7 +289,7 @@ export default function Hero() {
               Titulo principal con gradiente animado
             */}
             <motion.h1
-              className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.05] tracking-[-0.03em]"
+              className="text-6xl md:text-8xl lg:text-[7rem] xl:text-[8rem] font-bold text-white mb-6 leading-[1.02] tracking-[-0.04em]"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
               Llevamos tu negocio
