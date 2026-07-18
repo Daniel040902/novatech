@@ -297,28 +297,22 @@ export default function Hero() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-[length:200%_auto] animate-[gradient-shift_4s_linear_infinite]">
                 al siguiente nivel
               </span>
-            </motion.h1>
-
-            <motion.div variants={ITEM_VARIANTS} className="flex items-center gap-3 mb-4">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 text-green-400 text-sm font-bold">
-                Desde $60
+              <br />
+              <span className="text-green-400">Desde $60</span>
+              <br />
+              <span className="text-xl md:text-2xl lg:text-3xl font-medium text-slate-400/80">
+                Tambien puedes obtener el control de tu negocio desde tu casa.
               </span>
-            </motion.div>
+            </motion.h1>
 
             {/*
               Descripcion del servicio
             */}
             <motion.p
-              className="text-base md:text-lg text-slate-400/80 mb-4 leading-relaxed font-light tracking-wide max-w-xl"
+              className="text-base md:text-lg text-slate-400/80 mb-12 leading-relaxed font-light tracking-wide max-w-xl"
             >
               Desarrollamos landing pages, sistemas web y aplicaciones moviles a medida,
               creando soluciones tecnologicas modernas para impulsar tu negocio.
-            </motion.p>
-
-            <motion.p
-              className="text-sm md:text-base text-indigo-300/70 mb-12 leading-relaxed font-light tracking-wide max-w-xl"
-            >
-              Tambien puedes obtener el control de tu negocio desde tu casa.
             </motion.p>
 
             {/*
